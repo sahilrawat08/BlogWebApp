@@ -34,6 +34,11 @@ nav .link:hover {
     float: left;
 }
 
+main {
+    height: 100%;
+    width: 100%;
+}
+
 /*
  =========================================
 BELOW IS FOR HOME.EJS 
@@ -110,6 +115,36 @@ BELOW IS FOR HOME.EJS
     text-align: right;
     font-size: 13px;
 }
+
+/*
+ =========================================
+BELOW IS FOR signIn.EJS 
+ =========================================
+ */
+
+.login-form {
+    display: flex;
+    border: 10px solid #333;
+    justify-content: center;
+
+}
+
+.fill-form {
+    border: 5px solid #333;
+    margin: 100px;
+    padding: 3% 5%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s;
+}
+
 
 /*
  =========================================

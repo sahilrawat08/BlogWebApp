@@ -56,7 +56,9 @@ app.get('/home', async (req, res) => {
 })
 
 app.get('/signin', (req, res) => {
-    res.status(200).redirect("/home");
+    res.status(200).render("signIn.ejs", {
+        title: "SignIn"
+    });
 })
 
 app.get('/about', (req, res) => {
