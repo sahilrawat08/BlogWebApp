@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0px;
+    background-color: aliceblue;
+}
+header{
+    background-color: rgba(44, 11, 255, 0.572);
+    height: 66px;
+
+}
+
+header *{
+    color: white;
+}
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2cm;
+    border: 1px solid red;
+}
+
+header .logo-text{
+    margin: 8px;
+    
+}
+header ul {
+    float: right;
+    
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100px;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    background-color: white;
+    color: #444;
+}
+
+header ul li ul li a.logout{
+    color: red;
+}
+
+header ul li ul li a:hover{
+    background-color: rgb(168, 212, 212);
+} 
+
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background-color: #006669;
+    transition: 0.5s;
+} 
+
+header .menu-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width:750px) {
+    header {
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background-color: #0E94A0;
+        max-height: 0px;
+        overflow: hidden;
+
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        width: 100%;
+        display: block;
+        background-color: inherit;
+    }
+    
+header ul li ul li a{
+    padding: 10px;
+    background-color:#0E94A0;
+    color:white;
+    padding-left: 50px;
+}
+
+header ul li ul li a.logout{
+    color: red;
+
+}
+header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+}
+header .logo{
+
+    margin-left: .5em;
+    
+}
+
+}
+/*
+ =========================================
+BELOW IS FOR HOME.EJS 
+ =========================================
+ */
+
+ .banner {
+    display: flex;
+    background-image: url("https://static.wikia.nocookie.net/601504b4-4e95-4086-8a36-763657f5a363");
+    background-size:cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+    background-color: #eee;
+ }
+
+ .head {
+    display: flex;
+    justify-content: center;
+ }
+
+ .swipe {
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #eee;
+    background-color: #333;
+    border-radius: 3px;
+    opacity: 0.7;
+}
+
+.left-swipe {
+    position: absolute;
+    left: 0;
+}
+
+.right-swipe {
+    position: absolute;
+    right: 0;
+}
+
+.posts-section {
+    padding-bottom: 100px;
+}
+
+.posts {
+    padding: 15px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.post-title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.post-author {
+    text-align: right;
+    font-size: 18px;
+}
+
+.post-date {
+    text-align: right;
+    font-size: 13px;
+}
+
+/*
+ =========================================
+BELOW IS FOR Bottom.EJS 
+ =========================================
+ */
+
+.bottom-section {
+    display: flex; /*This is temperoary*/
+    justify-content: center; /*This is temperoary*/
+    align-items: center;
+    font-size: 32px;
+    border: 1px solid black;
+    color: white;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
